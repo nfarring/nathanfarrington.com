@@ -108,8 +108,7 @@ PAGE_PATHS = [
 ]
 
 # The list of plugins to load.
-#PLUGINS = ['assets', 'tipue_search']
-PLUGINS = ['tipue_search']
+PLUGINS = ['sitemap', 'tipue_search']
 
 # A list of directories where to look for plugins.
 PLUGIN_PATHS = ['/Users/nfarring/src/pelican-plugins']
@@ -471,6 +470,14 @@ THEME_STATIC_PATHS = ['static']
 # A list of tuples containing the logging level (up to warning) and the message
 # to be ignored.
 LOG_FILTER = []
+
+###########################
+# PELICAN PLUGIN: SITEMAP #
+###########################
+
+SITEMAP = {
+    'format': 'xml',
+}
 
 ##################
 # THEME SETTINGS #

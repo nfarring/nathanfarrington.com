@@ -1,0 +1,21 @@
+# https://blog.getpelican.com
+# Pelican is a static site generator,
+# written in Python, that requires no
+# database or server-side logic.
+pelican
+
+# https://pypi.python.org/pypi/typogrify
+# Filters to enhance web typography,
+# including support for Django & Jinja templates
+typogrify
+
+# https://pypi.python.org/pypi/webassets
+# Media asset management for Python,
+# with glue code for various web frameworks
+webassets
+cssmin
+
+# https://pypi.python.org/pypi/beautifulsoup4
+# Screen-scraping library
+bs4
+beautifulsoup4

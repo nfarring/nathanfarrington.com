@@ -1,0 +1,37 @@
+{% from '_includes/_defaults.html' import USE_SHORTCUT_ICONS with context %}
+{%if USE_SHORTCUT_ICONS == True %}
+        <link rel="shortcut icon" href="{{ SITEURL }}/images/favicon.ico" type="image/x-icon" type="image/png" />
+        {# Opera Speed Dial Icon #}
+        {# See https://github.com/operasoftware/devopera-static-backup/blob/master/http/dev.opera.com/articles/view/opera-speed-dial-enhancements/index.html #}
+        <link rel="icon" href="{{ SITEURL }}/images/apple-touch-icon-152x152.png" type="image/png" />
+        {# Safari on iOS #}
+        {# See https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html #}
+        <link rel="apple-touch-icon" href="{{ SITEURL }}/images/apple-touch-icon.png"  type="image/png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ SITEURL }}/images/apple-touch-icon-57x57.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ SITEURL }}/images/apple-touch-icon-72x72.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ SITEURL }}/images/apple-touch-icon-76x76.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/images/apple-touch-icon-114x114.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ SITEURL }}/images/apple-touch-icon-120x120.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ SITEURL }}/images/apple-touch-icon-144x144.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ SITEURL }}/images/apple-touch-icon-152x152.png" type="image/png" />
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ SITEURL }}/images/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ SITEURL }}/images/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ SITEURL }}/images/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ SITEURL }}/images/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ SITEURL }}/images/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ SITEURL }}/images/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ SITEURL }}/images/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ SITEURL }}/images/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="{{ SITEURL }}/images/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="{{ SITEURL }}/images/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="{{ SITEURL }}/images/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="{{ SITEURL }}/images/favicon-128.png" sizes="128x128" />
+        <link rel="icon" type="image/png" href="{{ SITEURL }}/images/favicon-196x196.png" sizes="196x196" />
+        <meta name="application-name" content="Nathan Farrington"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="{{ SITEURL }}/images/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="{{ SITEURL }}/images/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="{{ SITEURL }}/images/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="{{ SITEURL }}/images/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="{{ SITEURL }}/images/mstile-310x310.png" />
+{% endif %}

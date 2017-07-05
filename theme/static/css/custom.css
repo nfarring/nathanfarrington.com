@@ -1,0 +1,19 @@
+.hometop td {
+  vertical-align:middle;
+}
+.hometop img {
+	border:0;
+	margin-right:10px;
+  vertical-align:middle;
+}
+.hometop ul {
+  /* margin:0;*/
+	padding-left:50px;
+}
+.hometop li {
+	list-style-type:none;
+  margin-bottom:3px;
+	margin-top:3px;
+  padding-top:5px;
+  padding-bottom:5px;
+}

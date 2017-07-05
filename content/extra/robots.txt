@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: CNAME
+Disallow: tipuesearch_content.json
+Disallow: /drafts/
+Disallow: /images/
+Disallow: /theme/

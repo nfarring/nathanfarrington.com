@@ -3,6 +3,7 @@ Patents
 
 :slug: patents
 :summary: Patents
+:status: published
 
 | US Patent 9,668,037
 | **Detector remodulator and optoelectronic switch**

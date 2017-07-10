@@ -1,3 +1,6 @@
+.hometop h1 {
+  padding-left:70px;
+}
 .hometop td {
   vertical-align:middle;
 }
@@ -16,4 +19,14 @@
 	margin-top:3px;
   padding-top:5px;
   padding-bottom:5px;
+}
+table.footnote {
+  margin-bottom: 10px;
+}
+table.footnote td.label {
+  width: 12%;
+}
+table.footnote td.label + td {
+  text-align: left;
+  width: 88%;
 }

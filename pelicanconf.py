@@ -8,10 +8,10 @@ from __future__ import unicode_literals
 
 # A list of directories to exclude when looking for articles in addition to
 # PAGE_PATHS.
-ARTICLE_EXCLUDES = []
+ARTICLE_EXCLUDES = ['articles/images']
 
 # A list of directories and files to look at for articles, relative to PATH.
-ARTICLE_PATHS = ['']
+ARTICLE_PATHS = ['articles']
 
 # If True, saves content in caches. See Reading only modified content for
 # details about caching.
@@ -28,7 +28,7 @@ CHECK_MODIFIED_METHOD = 'mtime'
 CONTENT_CACHING_LAYER = 'reader'
 
 # The default category to fall back on.
-DEFAULT_CATEGORY = 'misc'
+DEFAULT_CATEGORY = 'uncategorized'
 
 # Delete the output directory, and all of its contents, before generating new
 # files. This can be useful in preventing older, unnecessary files from
@@ -103,19 +103,35 @@ PATH = 'content'
 PAGE_EXCLUDES = []
 
 # A list of directories and files to look at for pages, relative to PATH.
-PAGE_PATHS = [
-    'pages',
-]
+PAGE_PATHS = ['pages']
 
 # The list of plugins to load.
-PLUGINS = ['sitemap', 'tipue_search']
+PLUGINS = ['extract_toc', 'sitemap', 'tipue_search']
 
 # A list of directories where to look for plugins.
 PLUGIN_PATHS = ['/Users/nfarring/src/pelican-plugins']
 
 # A list of default Pygments settings for your reStructuredText code blocks. See
 # Syntax highlighting for a list of supported options.
-PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
+PYGMENTS_RST_OPTIONS = {
+#   'anchorlinenos': True,  # wrap line numbers in anchor tags
+#   'classprefix': '',      # string to prepend to token class names
+#   'hl_lines': [],         # list of lines to be highlighted
+#   'lineanchors': True,    # wrap each line in an anchor
+    'linenos': 'table',     # If present or set to “table” output line numbers
+                            # in a table, if set to “inline” output them inline.
+                            # “none” means do not output the line numbers.
+#   'linenospecial': True,  # every nth line gets ‘special’ css class
+#   'linenostart': 1,       # line number for the first line
+#   'linenostep': 1,        # print every nth line number
+#   'lineseparator': '\n',  # string to print between lines of code,
+                            # ‘n’ by default.
+#   'linespans': '',        # wrap each line in a span
+#   'nobackground': True,   # do not output background color
+#   'nowrap': True,         # do not wrap the tokens at all
+#   'tagsfile':             # ctags file to use for name definitions
+#   'tagurlformat':         # format for the ctag links
+}
 
 # A dictionary of file extensions / Reader classes for Pelican to process or
 # ignore.
@@ -144,6 +160,7 @@ STATIC_EXCLUDES = []
 # it is safe for a directory to appear both here and in PAGE_PATHS or
 # ARTICLE_PATHS. Pelican’s default settings include the “images” directory here.
 STATIC_PATHS = [
+    'articles/images',
     'bib',
     'extra',
     'images',
@@ -173,7 +190,7 @@ TYPOGRIFY_IGNORE_TAGS = []
 # True, and organize your articles in subfolders, the subfolder will become the
 # category of your post. If set to False, DEFAULT_CATEGORY will be used as a
 # fallback.
-USE_FOLDER_AS_CATEGORY = True
+USE_FOLDER_AS_CATEGORY = False
 
 # If disabled, content with dates in the future will get a default status of
 # draft. See Reading only modified content for caveats.
@@ -192,17 +209,17 @@ WRITE_SELECTED = []
 ARCHIVES_SAVE_AS = 'archives.html'
 
 # The place where we will save an article.
-ARTICLE_SAVE_AS = 'articles/{date:%Y}/{slug}.html'
+ARTICLE_SAVE_AS = 'articles/{slug}.html'
 
 # The URL to refer to an article which doesn’t use the default language.
-ARTICLE_LANG_URL = 'articles/{date:%Y}/{slug}-{lang}.html'
+ARTICLE_LANG_URL = 'articles/{slug}-{lang}.html'
 
 # The URL to refer to an article.
-ARTICLE_URL = 'articles/{date:%Y}/{slug}.html'
+ARTICLE_URL = 'articles/{slug}.html'
 
 # The place where we will save an article which doesn’t use the default
 # language.
-ARTICLE_LANG_SAVE_AS = 'articles/{date:%Y}/{slug}-{lang}.html'
+ARTICLE_LANG_SAVE_AS = 'articles/{slug}-{lang}.html'
 
 # The location to save an author.
 AUTHOR_SAVE_AS = ''
@@ -217,7 +234,7 @@ AUTHOR_URL = 'author/{slug}.html'
 AUTHORS_SAVE_AS = ''
 
 # The location to save a category.
-CATEGORY_SAVE_AS = 'category/{slug}.html'
+CATEGORY_SAVE_AS = ''
 
 # Added to SLUG_SUBSTITUTIONS for categories.
 CATEGORY_SUBSTITUTIONS = ()
@@ -276,7 +293,7 @@ RELATIVE_URLS = True
 SLUG_SUBSTITUTIONS = ()
 
 # The location to save the tag page.
-TAG_SAVE_AS = 'tag/{slug}.html'
+TAG_SAVE_AS = ''
 
 # Added to SLUG_SUBSTITUTIONS for tags.
 TAG_SUBSTITUTIONS = ()
@@ -333,6 +350,7 @@ DIRECT_TEMPLATES = [
     'index',
     'search',
     'tags',
+    '404',
 ]
 
 # A list of paths you want Jinja2 to search for templates. Can be used to
@@ -358,7 +376,9 @@ TEMPLATE_PAGES = {
 AUTHOR = 'Nathan Farrington'
 
 # The default metadata you want to use for all articles and pages.
-DEFAULT_METADATA = {}
+DEFAULT_METADATA = {
+    'status': 'draft',
+}
 
 # Extra metadata dictionaries keyed by relative path. Relative paths require
 # correct OS-specific directory separators (i.e. / in UNIX and \ in Windows)
@@ -533,14 +553,3 @@ SITESUBTITLE = ''
 
 # Display favicon and speed dial icon.
 USE_SHORTCUT_ICONS = True
-
-GITHUB_URL = 'https://github.com/nfarring'
-
-LINKS = ()
-
-SOCIAL = (
-    ('email', 'nathan@nathanfarrington.com'),
-    ('google-scholar', 'https://scholar.google.com/citations?user=nNZqtPgAAAAJ'),
-    ('stackoverflow', 'http://stackoverflow.com/users/483125/nathan-farrington'),
-    ('github', 'https://github.com/nfarring'),
-)

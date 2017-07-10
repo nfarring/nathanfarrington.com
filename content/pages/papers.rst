@@ -3,6 +3,7 @@ Papers
 
 :slug: papers
 :summary: Papers
+:status: published
 
 2016
 ----

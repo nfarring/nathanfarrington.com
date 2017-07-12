@@ -10,10 +10,11 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://nathanfarrington.com'
+###########################
+# PELICAN: BASIC SETTINGS #
+###########################
+
+# Defines whether Pelican should use document-relative URLs or not. Only set
+# this to True when developing/testing and only if you fully understand the
+# effect it can have on links/feeds.
 RELATIVE_URLS = False
-
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
-
-DELETE_OUTPUT_DIRECTORY = True

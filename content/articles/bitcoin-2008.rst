@@ -2,7 +2,7 @@
 Bitcoin (2008)
 ==============
 
-:date: 2017-07-09 21:24
+:date: 2017-07-12 08:00
 :category: paper review
 :tags: bitcoin
 :summary: A review of the 2008 paper titled "Bitcoin: A Peer-to-Peer

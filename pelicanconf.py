@@ -209,17 +209,17 @@ WRITE_SELECTED = []
 ARCHIVES_SAVE_AS = 'archives.html'
 
 # The place where we will save an article.
-ARTICLE_SAVE_AS = 'articles/{slug}.html'
+ARTICLE_SAVE_AS = '{slug}.html'
 
 # The URL to refer to an article which doesn’t use the default language.
-ARTICLE_LANG_URL = 'articles/{slug}-{lang}.html'
+ARTICLE_LANG_URL = '{slug}-{lang}.html'
 
 # The URL to refer to an article.
-ARTICLE_URL = 'articles/{slug}.html'
+ARTICLE_URL = '{slug}.html'
 
 # The place where we will save an article which doesn’t use the default
 # language.
-ARTICLE_LANG_SAVE_AS = 'articles/{slug}-{lang}.html'
+ARTICLE_LANG_SAVE_AS = '{slug}-{lang}.html'
 
 # The location to save an author.
 AUTHOR_SAVE_AS = ''

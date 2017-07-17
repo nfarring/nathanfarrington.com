@@ -2,11 +2,12 @@
 Bitcoin (2008)
 ==============
 
-:date: 2017-07-12 08:00
-:category: paper review
+:date: 2017-07-17 06:00
+:category: paper reviews
 :tags: bitcoin
 :summary: A review of the 2008 paper titled "Bitcoin: A Peer-to-Peer
           Electronic Cash System" by Satoshi Nakamoto.
+:status: published
 
 .. contents::
 
@@ -48,17 +49,12 @@ According to `bitcoin.org <https://bitcoin.org/en/>`_:
 
 So from this one-line definition,
 it would appear that the folks at bitcoin.org
-do in fact believe that Bitcoin is money,
-but they don't differentiate
-between commodity money
-and fiat money,
-or perhaps it is a new third-form of money?
-In my opinion,
-the other part of the definition,
-the *innovative payment network*,
-is just as important
-and is inseparable from
-the notion of Bitcoin as money.
+do in fact believe that Bitcoin is money.
+Is it commodity money?
+Fiat money?
+Or perhaps it is a new form of money?
+What about the *innovative payment network*
+and how does that fit in?
 
 Let's crack open
 the 2008 Bitcoin paper

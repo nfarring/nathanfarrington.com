@@ -109,7 +109,7 @@ PAGE_PATHS = ['pages']
 PLUGINS = ['extract_toc', 'sitemap', 'tipue_search']
 
 # A list of directories where to look for plugins.
-PLUGIN_PATHS = ['/Users/nfarring/src/pelican-plugins']
+PLUGIN_PATHS = ['../pelican-plugins']
 
 # A list of default Pygments settings for your reStructuredText code blocks. See
 # Syntax highlighting for a list of supported options.
@@ -504,23 +504,23 @@ SITEMAP = {
 ##################
 
 BIOGRAPHY = """
-<p>Nathan Farrington is currently the Director of Software and System
-Architecture at Rockley Photonics. Previously, Nathan was the founder and CEO of
-Packetcounter, a computer network software and services company. Before that he
-was a data center network engineer at Facebook developing the Open Compute
-Project top-of-rack switch (Wedge and FBOSS). Before grad school, Nathan worked
-for the US Navy in mobile robotics and situational awareness applications for
-the Department of Homeland Security.</p>
+<p>
+Worked for the Navy.
+Earned a PhD from UC San Diego.
+Worked at Facebook.
+Did some consulting.
+Started a company.
+Hired and managed a team.
+Currently working at Twitter.
+</p>
 
-<p>Nathan graduated from the University of California, San Diego, with a PhD in
-Computer Science and Computer Engineering. He was advised by Amin Vahdat, now at
-Google, as well as George Porter, George Papen, and Yeshaiahu “Shaya" Fainman.
-Nathan’s dissertation topic was on novel optical communications for data center
-networks. Nathan has served on the TPC of OFC 2014–2016 and ACM SOSR 2016, and
-as a reviewer for numerous journals including IEEE/ACM Transactions on
-Networking, IEEE/OSA Journal of Lightwave Technology, IEEE Micro, and ACM
-SIGCOMM Computer Communications Review. He is a member of the IEEE, the OSA, and
-the ACM.</p>
+<p>
+Best known for my academic research on computer networking.
+You can find my papers here or on my Google Scholar profile.
+You can also check out my open source projects on GitHub,
+my questions and answers on Stack Overflow,
+or my LinkedIn profile.
+</p>
 """
 
 # Thumbnail image to show when homepage is shared on social media. It also
